@@ -1,0 +1,7 @@
+{
+  "name": "Venkatagiri Eats",
+  "description": "A premium food delivery service for Venkatagiri, featuring real-time AI-curated restaurant listings and menus.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
