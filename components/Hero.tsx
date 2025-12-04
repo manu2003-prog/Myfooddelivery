@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowRight, Tag } from 'lucide-react';
 
@@ -8,12 +9,6 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ userName }) => {
   const getGreeting = () => {
     if (!userName) return "Hungry?";
-    const hour = new Date().getHours();
-    let greeting = "Good Day";
-    if (hour < 12) greeting = "Good Morning";
-    else if (hour < 18) greeting = "Good Afternoon";
-    else greeting = "Good Evening";
-    
     return `Hi ${userName.split(' ')[0]}, what are you eating today?`;
   };
 

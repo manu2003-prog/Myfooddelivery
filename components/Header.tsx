@@ -1,17 +1,16 @@
 
-import React, { useState, useEffect } from 'react';
-import { ShoppingBag, MapPin, Search, User, LogOut, Loader2, Navigation, Bell } from 'lucide-react';
+import React, { useState } from 'react';
+import { ShoppingBag, Search, Loader2, Navigation, Bell } from 'lucide-react';
 import { getAddressFromCoordinates } from '../services/geminiService';
 
 interface HeaderProps {
   cartCount: number;
   onOpenCart: () => void;
-  onLogoutClick: () => void;
   onProfileClick: () => void;
   user: { name: string; email: string } | null;
 }
 
-const Header: React.FC<HeaderProps> = ({ cartCount, onOpenCart, onLogoutClick, onProfileClick, user }) => {
+const Header: React.FC<HeaderProps> = ({ cartCount, onOpenCart, onProfileClick, user }) => {
   const [location, setLocation] = useState<string>("Venkatagiri, 524132");
   const [isLocating, setIsLocating] = useState(false);
 

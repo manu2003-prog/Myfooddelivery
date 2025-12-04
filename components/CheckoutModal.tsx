@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { X, Banknote, CheckCircle, Loader2, MapPin, Tag, ArrowRight, Bike, Calendar, Clock } from 'lucide-react';
+import { X, Banknote, CheckCircle, Loader2, MapPin, Tag, ArrowRight, Bike, Calendar } from 'lucide-react';
 import { CartItem, Order } from '../types';
 import { getAddressFromCoordinates } from '../services/geminiService';
 

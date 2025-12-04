@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { User, Heart, ShoppingBag, MapPin, LogOut, ChevronRight } from 'lucide-react';
+import { Heart, ShoppingBag, MapPin, LogOut, ChevronRight } from 'lucide-react';
 import { Order, Restaurant } from '../types';
 import OrderTracking from './OrderTracking';
 

@@ -1,6 +1,6 @@
 
-import React, { useState, useEffect } from 'react';
-import { Mail, Lock, User, ArrowRight, Loader2, Eye, EyeOff, CheckCircle, AlertCircle } from 'lucide-react';
+import React, { useState } from 'react';
+import { Mail, Lock, User, Loader2, Eye, EyeOff, CheckCircle, AlertCircle } from 'lucide-react';
 
 interface LoginPageProps {
   onLoginSuccess: (user: { name: string; email: string; phone?: string }) => void;

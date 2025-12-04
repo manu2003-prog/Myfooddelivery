@@ -71,12 +71,6 @@ const App: React.FC = () => {
   const handleAddToCart = useCallback((item: MenuItem, restaurant: Restaurant, note?: string) => {
     setCart(prevCart => {
       // Check if item exists with SAME options (e.g. note) from SAME restaurant
-      // For simplicity, we just check ID and restaurant. 
-      // In a real app with customization, unique ID logic would be complex.
-      // Here we assume items with different notes are distinct line items? 
-      // For this demo, let's just group by ID and update note if new. 
-      // Actually, simplest is to check ID.
-      
       const existingItemIndex = prevCart.findIndex(cartItem => cartItem.id === item.id);
       
       if (existingItemIndex > -1) {
@@ -162,7 +156,6 @@ const App: React.FC = () => {
       <Header 
         cartCount={cartCount} 
         onOpenCart={() => setIsCartOpen(true)}
-        onLogoutClick={() => setUser(null)}
         onProfileClick={() => setCurrentView('profile')}
         user={user}
       />
